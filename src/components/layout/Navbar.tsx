@@ -66,11 +66,11 @@ export const Navbar: React.FC = () => {
             </a>
           </div>
 
-          {/* Botón Menú Mobile */}
+          {/* Botón Menú Mobile y Tablet (Liquid Glass) */}
           <div className="flex lg:hidden">
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="p-2 rounded-lg text-slate-300 hover:text-white hover:bg-white/5"
+              className="p-2.5 rounded-xl bg-white/10 hover:bg-white/20 backdrop-blur-xl border border-white/25 text-white shadow-[inset_0_1px_1px_rgba(255,255,255,0.35),0_4px_14px_rgba(0,0,0,0.25)] transition-all duration-200 active:scale-95"
               aria-label="Abrir menú"
             >
               {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -80,40 +80,47 @@ export const Navbar: React.FC = () => {
         </div>
       </div>
 
-      {/* Menú Mobile */}
+      {/* Menú Flotante Mobile y Tablet con Liquid Glassmorphism */}
       {mobileMenuOpen && (
-        <div className="lg:hidden bg-[#080F1C]/95 backdrop-blur-xl border-b border-white/10 px-6 py-5 space-y-4">
-          <nav className="flex flex-col space-y-3">
+        <div className="lg:hidden mx-4 sm:mx-6 mt-2 mb-4 rounded-3xl bg-gradient-to-br from-[#0B1629]/75 via-[#080F1C]/65 to-[#0A1933]/75 backdrop-blur-2xl border border-white/25 shadow-[inset_0_1px_1px_rgba(255,255,255,0.3),0_24px_60px_rgba(0,0,0,0.65)] px-5 py-6 space-y-5 relative overflow-hidden">
+          {/* Orbe de luz ambiental para refracción de cristal */}
+          <div className="absolute -top-16 -right-16 w-48 h-48 bg-[#0A84FF]/25 rounded-full blur-3xl pointer-events-none" />
+          <div className="absolute -bottom-16 -left-16 w-44 h-44 bg-cyan-400/15 rounded-full blur-3xl pointer-events-none" />
+
+          <nav className="relative z-10 flex flex-col space-y-2">
             {NAV_LINKS.map((link) => (
               <a
                 key={link.name}
                 href={link.href}
                 onClick={() => setMobileMenuOpen(false)}
-                className={`text-base py-2 border-b border-white/5 flex items-center justify-between ${
-                  link.active ? 'text-[#0A84FF] font-semibold' : 'text-slate-300'
+                className={`text-base px-4 py-3 rounded-2xl flex items-center justify-between transition-all duration-200 ${
+                  link.active
+                    ? 'bg-[#0A84FF]/25 backdrop-blur-md border border-[#0A84FF]/50 text-white font-semibold shadow-[inset_0_1px_1px_rgba(255,255,255,0.3)]'
+                    : 'bg-white/[0.04] hover:bg-white/[0.12] border border-white/10 hover:border-white/25 text-slate-200 hover:text-white'
                 }`}
               >
                 <span>{link.name}</span>
-                {link.hasDropdown && <ChevronDown className="w-4 h-4 text-slate-500" />}
+                {link.hasDropdown && <ChevronDown className="w-4 h-4 text-slate-300" />}
               </a>
             ))}
           </nav>
-          <div className="pt-2">
+
+          <div className="relative z-10 pt-1">
             <a
               href={WHATSAPP_URL}
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => setMobileMenuOpen(false)}
-              className="w-full inline-flex items-center justify-center gap-2 px-5 py-3 rounded-full bg-[#0A84FF] text-white text-sm font-semibold"
+              className="w-full inline-flex items-center justify-center gap-2.5 px-6 py-3.5 rounded-full bg-[#0A84FF]/75 hover:bg-[#0A84FF]/95 backdrop-blur-xl border border-white/40 text-white text-sm font-semibold shadow-[inset_0_1px_1px_rgba(255,255,255,0.6),0_10px_30px_rgba(10,132,255,0.45)] transition-all duration-200 active:scale-[0.98]"
             >
               <Send className="w-4 h-4 -rotate-45" />
               <span>Contáctanos</span>
             </a>
           </div>
 
-          {/* Redes Sociales en Menú Móvil */}
-          <div className="pt-4 border-t border-white/10 flex flex-col items-center gap-2.5">
-            <span className="text-[10px] font-mono uppercase tracking-widest text-slate-400">
+          {/* Redes Sociales en Menú Móvil y Tablet */}
+          <div className="relative z-10 pt-4 border-t border-white/15 flex flex-col items-center gap-3">
+            <span className="text-[10px] font-mono uppercase tracking-widest text-slate-300">
               Síguenos en Redes
             </span>
             <SocialLinks className="flex items-center justify-center gap-3" />

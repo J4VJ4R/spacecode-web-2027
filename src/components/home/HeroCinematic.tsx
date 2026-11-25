@@ -184,12 +184,12 @@ export const HeroCinematic: React.FC = () => {
         <div className="max-w-3xl lg:max-w-4xl py-6 lg:py-10">
           
           {/* Eyebrow / Tagline Oficial */}
-          <div className="font-mono text-xs sm:text-sm uppercase tracking-[0.25em] text-slate-300 font-medium mb-5 sm:mb-6 flex items-center gap-2.5">
-            <span>INGENIERÍA</span>
+          <div className="font-mono text-[11px] sm:text-sm uppercase tracking-[0.12em] sm:tracking-[0.25em] text-slate-300 font-medium mb-5 sm:mb-6 flex flex-wrap items-center justify-center sm:justify-start gap-x-2.5 gap-y-1.5 text-center sm:text-left">
+            <span className="whitespace-nowrap">INGENIERÍA</span>
             <span className="text-[#0A84FF]">•</span>
-            <span>INTELIGENCIA ARTIFICIAL</span>
+            <span className="whitespace-nowrap">INTELIGENCIA ARTIFICIAL</span>
             <span className="text-[#0A84FF]">•</span>
-            <span>INNOVACIÓN</span>
+            <span className="whitespace-nowrap">INNOVACIÓN</span>
           </div>
 
           {/* Titular Principal de Gran Impacto */}
