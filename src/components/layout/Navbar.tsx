@@ -20,8 +20,8 @@ export const Navbar: React.FC = () => {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
-          ? 'bg-[#080F1C] border-b border-slate-800/90 shadow-[0_12px_36px_rgba(0,0,0,0.75)] py-3.5'
-          : 'bg-gradient-to-b from-[#080F1C] via-[#080F1C]/70 to-transparent py-5'
+          ? 'bg-[#080F1C]/70 backdrop-blur-2xl border-b border-white/20 shadow-[inset_0_-1px_0_rgba(255,255,255,0.12),0_12px_40px_rgba(0,0,0,0.55)] py-3.5'
+          : 'bg-[#080F1C]/40 backdrop-blur-md border-b border-white/10 py-5'
       }`}
     >
       <div className="max-w-[1540px] mx-auto px-6 sm:px-10 lg:px-14 xl:px-16">
@@ -53,13 +53,13 @@ export const Navbar: React.FC = () => {
             ))}
           </nav>
 
-          {/* Botón CTA: Contáctanos (Enlace directo a WhatsApp) */}
+          {/* Botón CTA: Contáctanos (Liquid Glass WhatsApp) */}
           <div className="hidden sm:flex items-center">
             <a
               href={WHATSAPP_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2.5 px-6 py-2.5 rounded-full bg-[#0A84FF] hover:bg-[#0070E0] text-white text-xs sm:text-sm font-semibold tracking-wide transition-all duration-200 shadow-lg shadow-[#0A84FF]/30 hover:shadow-[#0A84FF]/50 hover:scale-[1.02]"
+              className="inline-flex items-center gap-2.5 px-6 py-2.5 rounded-full bg-[#0A84FF]/70 hover:bg-[#0A84FF]/90 backdrop-blur-xl border border-white/40 text-white text-xs sm:text-sm font-semibold tracking-wide transition-all duration-200 shadow-[inset_0_1px_1px_rgba(255,255,255,0.6),0_8px_28px_rgba(10,132,255,0.45)] hover:shadow-[inset_0_1px_1px_rgba(255,255,255,0.75),0_10px_36px_rgba(10,132,255,0.65)] hover:scale-[1.03]"
             >
               <Send className="w-4 h-4 -rotate-45" />
               <span>Contáctanos</span>

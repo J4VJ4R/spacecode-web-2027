@@ -18,9 +18,9 @@ export const WhatsAppButton: React.FC<WhatsAppButtonProps> = ({
   return (
     <div className="fixed bottom-6 right-6 sm:bottom-8 sm:right-8 z-50 flex items-end gap-3 pointer-events-auto select-none">
       
-      {/* Pastilla / Tooltip Inteligente de Tendencia Actual */}
+      {/* Pastilla / Tooltip Inteligente con Liquid Glass */}
       {!tooltipDismissed && (
-        <div className="hidden sm:flex items-center gap-3 bg-[#080F1C]/95 text-white text-xs px-4 py-2.5 rounded-2xl border border-white/10 shadow-2xl backdrop-blur-md animate-fade-in transition-all duration-300 hover:border-[#25D366]/40 group">
+        <div className="hidden sm:flex items-center gap-3 bg-[#080F1C]/65 text-white text-xs px-4 py-2.5 rounded-2xl border border-white/25 shadow-[inset_0_1px_1px_rgba(255,255,255,0.25),0_12px_36px_rgba(0,0,0,0.45)] backdrop-blur-2xl animate-fade-in transition-all duration-300 hover:border-[#25D366]/60 group">
           <div className="flex flex-col">
             <div className="flex items-center gap-1.5 font-mono text-[10px] text-[#25D366] font-semibold">
               <span className="w-2 h-2 rounded-full bg-[#25D366] animate-pulse" />
@@ -52,7 +52,7 @@ export const WhatsAppButton: React.FC<WhatsAppButtonProps> = ({
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Contactar a SPACECode por WhatsApp"
-        className="relative group flex items-center justify-center w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-[#25D366] hover:bg-[#20BD5A] text-white shadow-[0_8px_30px_rgba(37,211,102,0.4)] hover:shadow-[0_10px_40px_rgba(37,211,102,0.6)] hover:scale-105 active:scale-95 transition-all duration-300"
+        className="relative group flex items-center justify-center w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-[#25D366]/80 hover:bg-[#25D366]/95 backdrop-blur-xl border border-white/45 text-white shadow-[inset_0_1px_2px_rgba(255,255,255,0.65),0_10px_34px_rgba(37,211,102,0.5)] hover:shadow-[inset_0_1px_2px_rgba(255,255,255,0.8),0_14px_42px_rgba(37,211,102,0.7)] hover:scale-105 active:scale-95 transition-all duration-300"
       >
         {/* Anillo Pulsante de Disponibilidad en Vivo */}
         <span className="absolute -inset-1 rounded-full bg-[#25D366]/40 animate-ping pointer-events-none" />

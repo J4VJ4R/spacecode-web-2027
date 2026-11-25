@@ -89,7 +89,7 @@ export const SocialLinks: React.FC<SocialLinksProps> = ({ className = 'flex item
             rel="noopener noreferrer"
             aria-label={`Visitar ${item.name} de SPACECode`}
             title={`SPACECode en ${item.name}`}
-            className="w-9 h-9 rounded-xl bg-white/5 border border-white/10 hover:border-[#0A84FF] hover:bg-[#0A84FF]/15 text-slate-300 hover:text-white flex items-center justify-center transition-all duration-200 hover:scale-105 hover:shadow-lg hover:shadow-[#0A84FF]/20 group"
+            className="w-9 h-9 rounded-xl bg-white/10 backdrop-blur-xl border border-white/25 hover:border-[#0A84FF] hover:bg-[#0A84FF]/40 text-slate-200 hover:text-white flex items-center justify-center transition-all duration-200 hover:scale-110 shadow-[inset_0_1px_1px_rgba(255,255,255,0.3),0_4px_14px_rgba(0,0,0,0.3)] hover:shadow-[inset_0_1px_1px_rgba(255,255,255,0.5),0_8px_20px_rgba(10,132,255,0.35)] group"
           >
             <Icon className="w-4 h-4 transition-transform group-hover:scale-110" />
           </a>

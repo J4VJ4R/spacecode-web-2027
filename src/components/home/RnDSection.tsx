@@ -6,8 +6,10 @@ export const RnDSection: React.FC = () => {
     <section id="id" className="py-16 sm:py-24 bg-white">
       <div className="max-w-[1540px] mx-auto px-6 sm:px-10 lg:px-14 xl:px-16">
         
-        {/* Contenedor Dividido de I+D de Gran Escala */}
-        <div className="rounded-3xl overflow-hidden shadow-2xl border border-slate-200 grid grid-cols-1 lg:grid-cols-12 bg-[#080F1C]">
+        {/* Contenedor Dividido de I+D de Gran Escala con Glassmorphism */}
+        <div className="relative rounded-3xl overflow-hidden shadow-[0_24px_64px_rgba(8,15,28,0.22)] border border-white/15 grid grid-cols-1 lg:grid-cols-12 bg-[#080F1C]">
+          {/* Luz ambiental sutil dentro del panel */}
+          <div className="absolute -bottom-24 -right-24 w-96 h-96 bg-[#0A84FF]/20 rounded-full blur-[110px] pointer-events-none" />
           
           {/* Lado Izquierdo: Fotografía del Científico e Investigador de SPACECode */}
           <div className="lg:col-span-6 relative min-h-[320px] sm:min-h-[420px] lg:min-h-[480px] overflow-hidden">
@@ -38,7 +40,7 @@ export const RnDSection: React.FC = () => {
             <div>
               <a
                 href="#contacto"
-                className="inline-flex items-center gap-3 px-8 py-4 rounded-full bg-[#0A84FF] hover:bg-[#0070E0] text-white text-sm sm:text-base font-semibold tracking-wide transition-all duration-200 shadow-xl shadow-[#0A84FF]/30 hover:scale-[1.03] group"
+                className="inline-flex items-center gap-3 px-8 py-4 rounded-full bg-[#0A84FF]/70 hover:bg-[#0A84FF]/90 backdrop-blur-xl border border-white/40 text-white text-sm sm:text-base font-semibold tracking-wide transition-all duration-200 shadow-[inset_0_1px_1px_rgba(255,255,255,0.6),0_10px_32px_rgba(10,132,255,0.45)] hover:shadow-[inset_0_1px_1px_rgba(255,255,255,0.8),0_14px_40px_rgba(10,132,255,0.65)] hover:scale-[1.03] group"
               >
                 <span>Explora nuestros proyectos</span>
                 <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />

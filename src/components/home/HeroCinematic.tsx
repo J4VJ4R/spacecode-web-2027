@@ -206,11 +206,11 @@ export const HeroCinematic: React.FC = () => {
             Diseñamos, desarrollamos e implementamos soluciones de software, inteligencia artificial y sistemas tecnológicos para resolver desafíos reales.
           </p>
 
-          {/* Botones de Acción de Escala Premium */}
+          {/* Botones de Acción con Liquid Glassmorphism */}
           <div className="flex flex-wrap items-center gap-4 sm:gap-6 mb-8 sm:mb-12">
             <a
               href="#divisiones"
-              className="inline-flex items-center justify-center gap-3 px-8 py-4 rounded-full bg-[#0A84FF] hover:bg-[#0070E0] text-white text-sm sm:text-base font-semibold tracking-wide whitespace-nowrap shrink-0 transition-all duration-200 shadow-xl shadow-[#0A84FF]/35 hover:shadow-[#0A84FF]/55 hover:scale-[1.03]"
+              className="inline-flex items-center justify-center gap-3 px-8 py-4 rounded-full bg-[#0A84FF]/70 hover:bg-[#0A84FF]/90 backdrop-blur-xl border border-white/40 text-white text-sm sm:text-base font-semibold tracking-wide whitespace-nowrap shrink-0 transition-all duration-200 shadow-[inset_0_1px_1px_rgba(255,255,255,0.6),0_10px_32px_rgba(10,132,255,0.45)] hover:shadow-[inset_0_1px_1px_rgba(255,255,255,0.8),0_14px_40px_rgba(10,132,255,0.65)] hover:scale-[1.03]"
             >
               <Send className="w-4 h-4 -rotate-45 shrink-0" />
               <span>Conoce nuestras soluciones</span>
@@ -218,7 +218,7 @@ export const HeroCinematic: React.FC = () => {
 
             <a
               href="#id"
-              className="inline-flex items-center justify-center gap-3 px-8 py-4 rounded-full bg-black/40 hover:bg-black/60 text-slate-100 hover:text-white text-sm sm:text-base font-semibold tracking-wide whitespace-nowrap shrink-0 border border-white/25 hover:border-white/50 backdrop-blur-md transition-all duration-200"
+              className="inline-flex items-center justify-center gap-3 px-8 py-4 rounded-full bg-white/10 hover:bg-white/20 backdrop-blur-xl text-white text-sm sm:text-base font-semibold tracking-wide whitespace-nowrap shrink-0 border border-white/30 hover:border-white/50 shadow-[inset_0_1px_1px_rgba(255,255,255,0.35),0_8px_28px_rgba(0,0,0,0.35)] transition-all duration-200 hover:scale-[1.03]"
             >
               <Play className="w-4 h-4 fill-current text-[#0A84FF] shrink-0" />
               <span>Ver video corporativo</span>
@@ -226,7 +226,7 @@ export const HeroCinematic: React.FC = () => {
           </div>
 
           {/* Consola Interactiva de Presentación: 11 Escenarios SPACECode */}
-          <div className="bg-black/55 backdrop-blur-md border border-white/10 rounded-2xl p-3.5 sm:p-4 max-w-2xl shadow-2xl">
+          <div className="bg-gradient-to-br from-white/[0.12] via-white/[0.06] to-white/[0.02] backdrop-blur-2xl border border-white/25 rounded-2xl p-3.5 sm:p-4 max-w-2xl shadow-[inset_0_1px_1px_rgba(255,255,255,0.3),0_16px_44px_rgba(0,0,0,0.45)]">
             
             {/* Barra superior de segmentos (11 diapositivas estilo historias con progreso) */}
             <div className="grid grid-cols-11 gap-1.5 mb-3">
@@ -314,42 +314,42 @@ export const HeroCinematic: React.FC = () => {
         </div>
       </div>
 
-      {/* Barra Inferior de 4 Capacidades con Ancho Completo */}
-      <div className="relative z-10 max-w-[1540px] mx-auto px-6 sm:px-10 lg:px-14 xl:px-16 w-full border-t border-white/10 pt-8 pb-4">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-10 text-slate-200">
+      {/* Barra Inferior de 4 Capacidades con Glassmorphism Empresarial */}
+      <div className="relative z-10 max-w-[1540px] mx-auto px-6 sm:px-10 lg:px-14 xl:px-16 w-full pt-4 pb-2">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-5 text-slate-200">
           
-          <div className="flex items-center gap-4 group">
-            <div className="w-10 h-10 rounded-xl bg-[#0A84FF]/15 border border-[#0A84FF]/35 flex items-center justify-center text-[#0A84FF] shrink-0 group-hover:bg-[#0A84FF] group-hover:text-white transition-colors duration-200">
+          <div className="flex items-center gap-3.5 sm:gap-4 group p-3.5 sm:p-4 rounded-2xl bg-gradient-to-br from-white/[0.11] via-white/[0.05] to-transparent backdrop-blur-2xl border border-white/20 hover:border-[#0A84FF]/60 hover:from-white/[0.16] shadow-[inset_0_1px_1px_rgba(255,255,255,0.25),0_10px_30px_rgba(0,0,0,0.3)] transition-all duration-300">
+            <div className="w-10 h-10 rounded-xl bg-[#0A84FF]/25 backdrop-blur-md border border-white/30 flex items-center justify-center text-white shrink-0 group-hover:bg-[#0A84FF] transition-colors duration-200 shadow-[inset_0_1px_1px_rgba(255,255,255,0.4)]">
               <Code className="w-5 h-5" />
             </div>
-            <span className="font-medium text-slate-200 text-xs sm:text-sm xl:text-base">
+            <span className="font-medium text-white text-xs sm:text-sm xl:text-base">
               Desarrollo de productos
             </span>
           </div>
 
-          <div className="flex items-center gap-4 group">
-            <div className="w-10 h-10 rounded-xl bg-[#0A84FF]/15 border border-[#0A84FF]/35 flex items-center justify-center text-[#0A84FF] shrink-0 group-hover:bg-[#0A84FF] group-hover:text-white transition-colors duration-200">
+          <div className="flex items-center gap-3.5 sm:gap-4 group p-3.5 sm:p-4 rounded-2xl bg-gradient-to-br from-white/[0.11] via-white/[0.05] to-transparent backdrop-blur-2xl border border-white/20 hover:border-[#0A84FF]/60 hover:from-white/[0.16] shadow-[inset_0_1px_1px_rgba(255,255,255,0.25),0_10px_30px_rgba(0,0,0,0.3)] transition-all duration-300">
+            <div className="w-10 h-10 rounded-xl bg-[#0A84FF]/25 backdrop-blur-md border border-white/30 flex items-center justify-center text-white shrink-0 group-hover:bg-[#0A84FF] transition-colors duration-200 shadow-[inset_0_1px_1px_rgba(255,255,255,0.4)]">
               <Cpu className="w-5 h-5" />
             </div>
-            <span className="font-medium text-slate-200 text-xs sm:text-sm xl:text-base">
+            <span className="font-medium text-white text-xs sm:text-sm xl:text-base">
               Inteligencia Artificial
             </span>
           </div>
 
-          <div className="flex items-center gap-4 group">
-            <div className="w-10 h-10 rounded-xl bg-[#0A84FF]/15 border border-[#0A84FF]/35 flex items-center justify-center text-[#0A84FF] shrink-0 group-hover:bg-[#0A84FF] group-hover:text-white transition-colors duration-200">
+          <div className="flex items-center gap-3.5 sm:gap-4 group p-3.5 sm:p-4 rounded-2xl bg-gradient-to-br from-white/[0.11] via-white/[0.05] to-transparent backdrop-blur-2xl border border-white/20 hover:border-[#0A84FF]/60 hover:from-white/[0.16] shadow-[inset_0_1px_1px_rgba(255,255,255,0.25),0_10px_30px_rgba(0,0,0,0.3)] transition-all duration-300">
+            <div className="w-10 h-10 rounded-xl bg-[#0A84FF]/25 backdrop-blur-md border border-white/30 flex items-center justify-center text-white shrink-0 group-hover:bg-[#0A84FF] transition-colors duration-200 shadow-[inset_0_1px_1px_rgba(255,255,255,0.4)]">
               <Layers className="w-5 h-5" />
             </div>
-            <span className="font-medium text-slate-200 text-xs sm:text-sm xl:text-base">
+            <span className="font-medium text-white text-xs sm:text-sm xl:text-base">
               Soluciones multindustria
             </span>
           </div>
 
-          <div className="flex items-center gap-4 group">
-            <div className="w-10 h-10 rounded-xl bg-[#0A84FF]/15 border border-[#0A84FF]/35 flex items-center justify-center text-[#0A84FF] shrink-0 group-hover:bg-[#0A84FF] group-hover:text-white transition-colors duration-200">
+          <div className="flex items-center gap-3.5 sm:gap-4 group p-3.5 sm:p-4 rounded-2xl bg-gradient-to-br from-white/[0.11] via-white/[0.05] to-transparent backdrop-blur-2xl border border-white/20 hover:border-[#0A84FF]/60 hover:from-white/[0.16] shadow-[inset_0_1px_1px_rgba(255,255,255,0.25),0_10px_30px_rgba(0,0,0,0.3)] transition-all duration-300">
+            <div className="w-10 h-10 rounded-xl bg-[#0A84FF]/25 backdrop-blur-md border border-white/30 flex items-center justify-center text-white shrink-0 group-hover:bg-[#0A84FF] transition-colors duration-200 shadow-[inset_0_1px_1px_rgba(255,255,255,0.4)]">
               <Globe className="w-5 h-5" />
             </div>
-            <span className="font-medium text-slate-200 text-xs sm:text-sm xl:text-base">
+            <span className="font-medium text-white text-xs sm:text-sm xl:text-base">
               Impacto regional y global
             </span>
           </div>

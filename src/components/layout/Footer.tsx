@@ -11,6 +11,8 @@ export const Footer: React.FC = () => {
 
   return (
     <footer className="bg-[#080F1C] text-slate-400 border-t border-white/10 relative overflow-hidden">
+      {/* Iluminación ambiental de fondo */}
+      <div className="absolute -top-32 right-1/4 w-[500px] h-[300px] bg-[#0A84FF]/10 rounded-full blur-[130px] pointer-events-none" />
       <div className="max-w-[1540px] mx-auto px-6 sm:px-10 lg:px-14 xl:px-16 py-16 lg:py-20 relative z-10">
         
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
@@ -65,8 +67,8 @@ export const Footer: React.FC = () => {
             </ul>
           </div>
 
-          {/* Contacto Institucional */}
-          <div id="contacto" className="space-y-4 scroll-mt-24">
+          {/* Contacto Institucional con Tarjeta Liquid Glass */}
+          <div id="contacto" className="space-y-4 scroll-mt-24 bg-gradient-to-br from-white/[0.10] via-white/[0.04] to-transparent backdrop-blur-2xl border border-white/20 rounded-2xl p-6 shadow-[inset_0_1px_1px_rgba(255,255,255,0.25),0_16px_40px_rgba(0,0,0,0.4)]">
             <h4 className="font-display font-semibold text-white text-sm uppercase tracking-wider">
               Contacto Global
             </h4>
@@ -87,7 +89,7 @@ export const Footer: React.FC = () => {
                   href={WHATSAPP_URL}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#0A84FF] text-white text-xs font-semibold hover:bg-[#0070E0] transition-colors shadow-md shadow-[#0A84FF]/25"
+                  className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#0A84FF]/70 hover:bg-[#0A84FF]/90 backdrop-blur-xl border border-white/40 text-white text-xs font-semibold transition-all shadow-[inset_0_1px_1px_rgba(255,255,255,0.6),0_8px_24px_rgba(10,132,255,0.4)] hover:scale-[1.03]"
                 >
                   <span>Iniciar Conversación</span>
                 </a>
@@ -104,7 +106,7 @@ export const Footer: React.FC = () => {
           </div>
           <button
             onClick={scrollToTop}
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 hover:bg-white/10 text-slate-300 hover:text-white border border-white/10 text-xs transition-colors"
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 hover:bg-white/20 backdrop-blur-xl text-slate-200 hover:text-white border border-white/25 shadow-[inset_0_1px_1px_rgba(255,255,255,0.25)] text-xs transition-all"
           >
             <span>Subir al inicio</span>
             <ArrowUp className="w-3.5 h-3.5" />
